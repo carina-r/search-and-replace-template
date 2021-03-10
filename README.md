@@ -4,7 +4,7 @@ Template für die Einsendeaufgabe "Suchen und Ersetzen" der Class "JavaScript DO
 </p>
 
 ## Suchen und Ersetzen
-*Search and Replace* ist eine kleine Applikation, mit der du das Dom manipulierst. Ziel ist eine Suchen und Ersetzen Funktion im Text. Diese Template ist der Ausgangspunkt von dem du in die Einsendeaufgabe starten kannst. Tobe dich aus und setzte deiner Kreativität keine Grenzen.
+*Search and Replace* ist eine kleine Applikation, mit der du das Dom manipulierst. Ziel ist eine Suchen und Ersetzen Funktion im Text. Dieses Template ist der Ausgangspunkt von dem du in die Einsendeaufgabe starten kannst. Tobe dich aus und setzte deiner Kreativität keine Grenzen.
 
 ## Demo
 
