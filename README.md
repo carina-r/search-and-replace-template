@@ -9,3 +9,5 @@ Template für die Einsendeaufgabe "Suchen und Ersetzen" der Class "JavaScript DO
 ## Demo
 
 Eine Demo der Einsendeaufgabe findet sich unter: <a href="https://search-replace.webmasters-akademie.dev/">https://search-replace.webmasters-akademie.dev/</a>
+
+![CleanShot 2021-03-10 at 11 58 01](https://user-images.githubusercontent.com/42392570/110621161-2d4e8780-819a-11eb-82b0-09ae3f748f87.gif)
