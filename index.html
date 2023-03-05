@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Suchen & Ersetzen</title>
-        <script src="index.js" defer="defer"></script>
+        <script src="index.min.js" defer="defer"></script>
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css"
@@ -20,16 +20,7 @@
                 <div class="w-full max-w-l mx-auto">
                     <h1>
                         <span
-                            class="
-                                mt-2
-                                block
-                                text-3xl text-center
-                                leading-8
-                                font-extrabold
-                                tracking-tight
-                                text-gray-900
-                                sm:text-4xl
-                            "
+                            class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
                             >Suchen und Ersetzen</span
                         >
                     </h1>
@@ -44,12 +35,7 @@
                                 <input
                                     type="text"
                                     id="search"
-                                    class="
-                                        form-input
-                                        block
-                                        w-full
-                                        sm:text-sm sm:leading-5
-                                    "
+                                    class="form-input block w-full sm:text-sm sm:leading-5"
                                     placeholder="Search..."
                                 />
                             </div>
@@ -64,74 +50,25 @@
                                 <input
                                     type="text"
                                     id="replace"
-                                    class="
-                                        form-input
-                                        block
-                                        w-full
-                                        sm:text-sm sm:leading-5
-                                    "
+                                    class="form-input block w-full sm:text-sm sm:leading-5"
                                     placeholder="Replace..."
                                 />
                             </div>
                         </div>
                         <span
-                            class="
-                                relative
-                                z-0
-                                inline-flex
-                                shadow-sm
-                                rounded-md
-                                ml-8
-                            "
+                            class="relative z-0 inline-flex shadow-sm rounded-md ml-8"
                         >
                             <button
                                 type="button"
                                 id="replaceFirstOccurencebtn"
-                                class="
-                                    relative
-                                    inline-flex
-                                    items-center
-                                    px-4
-                                    py-2
-                                    rounded-l-md
-                                    border border-gray-300
-                                    bg-white
-                                    text-sm
-                                    font-medium
-                                    text-gray-700
-                                    hover:bg-gray-50
-                                    focus:z-10
-                                    focus:outline-none
-                                    focus:ring-1
-                                    focus:ring-indigo-500
-                                    focus:border-indigo-500
-                                "
+                                class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
                             >
                                 Replace first occurrence
                             </button>
                             <button
                                 type="button"
                                 id="replaceAllbtn"
-                                class="
-                                    -ml-px
-                                    relative
-                                    inline-flex
-                                    items-center
-                                    px-4
-                                    py-2
-                                    rounded-r-md
-                                    border border-gray-300
-                                    bg-white
-                                    text-sm
-                                    font-medium
-                                    text-gray-700
-                                    hover:bg-gray-50
-                                    focus:z-10
-                                    focus:outline-none
-                                    focus:ring-1
-                                    focus:ring-indigo-500
-                                    focus:border-indigo-500
-                                "
+                                class="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
                             >
                                 Replace all occurrences
                             </button>
@@ -139,14 +76,7 @@
                     </div>
 
                     <div
-                        class="
-                            prose
-                            text-gray-500
-                            mx-auto
-                            lg:max-w-none
-                            mt-12
-                            px-60
-                        "
+                        class="prose text-gray-500 mx-auto lg:max-w-none mt-12 px-60"
                     >
                         <p
                             class="antialiased text-justify break-words"
