@@ -1,77 +1,222 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Suchen und Ersetzen</title>
+        <title>Suchen & Ersetzen</title>
         <script src="index.js" defer="defer"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css"
+        />
     </head>
 
-    <body>
-        <h1>
-            Suchen und Ersetzen
-        </h1>
+    <body
+        class="antialiased font-sans bg-gray-200"
+        data-new-gr-c-s-check-loaded="14.984.0"
+        data-gr-ext-installed=""
+    >
         <div>
-            <div>
-                <label for="search">Search</label>
-                <input type="text" id="search" placeholder="Search..." />
-            </div>
-            <div>
-                <label for="replace">Replace</label>
-                <input type="text" id="replace" placeholder="Replace..." />
-            </div>
-            <button type="button" id="replaceFirstOccurencebtn">
-                ersten Treffer ersetzen
-            </button>
-            <button type="button" id="replaceAllbtn">
-                alle Treffer ersetzen
-            </button>
-        </div>
+            <div class="p-8 flex items-center justify-center bg-white">
+                <div class="w-full max-w-l mx-auto">
+                    <h1>
+                        <span
+                            class="
+                                mt-2
+                                block
+                                text-3xl text-center
+                                leading-8
+                                font-extrabold
+                                tracking-tight
+                                text-gray-900
+                                sm:text-4xl
+                            "
+                            >Suchen und Ersetzen</span
+                        >
+                    </h1>
+                    <div class="flex justify-center mt-8">
+                        <div>
+                            <label
+                                for="search"
+                                class="block text-sm font-medium text-gray-700"
+                                >Search</label
+                            >
+                            <div class="mt-1">
+                                <input
+                                    type="text"
+                                    id="search"
+                                    class="
+                                        form-input
+                                        block
+                                        w-full
+                                        sm:text-sm sm:leading-5
+                                    "
+                                    placeholder="Search..."
+                                />
+                            </div>
+                        </div>
+                        <div class="ml-2">
+                            <label
+                                for="replace"
+                                class="block text-sm font-medium text-gray-700"
+                                >Replace</label
+                            >
+                            <div class="mt-1">
+                                <input
+                                    type="text"
+                                    id="replace"
+                                    class="
+                                        form-input
+                                        block
+                                        w-full
+                                        sm:text-sm sm:leading-5
+                                    "
+                                    placeholder="Replace..."
+                                />
+                            </div>
+                        </div>
+                        <span
+                            class="
+                                relative
+                                z-0
+                                inline-flex
+                                shadow-sm
+                                rounded-md
+                                ml-8
+                            "
+                        >
+                            <button
+                                type="button"
+                                id="replaceFirstOccurencebtn"
+                                class="
+                                    relative
+                                    inline-flex
+                                    items-center
+                                    px-4
+                                    py-2
+                                    rounded-l-md
+                                    border border-gray-300
+                                    bg-white
+                                    text-sm
+                                    font-medium
+                                    text-gray-700
+                                    hover:bg-gray-50
+                                    focus:z-10
+                                    focus:outline-none
+                                    focus:ring-1
+                                    focus:ring-indigo-500
+                                    focus:border-indigo-500
+                                "
+                            >
+                                Replace first occurrence
+                            </button>
+                            <button
+                                type="button"
+                                id="replaceAllbtn"
+                                class="
+                                    -ml-px
+                                    relative
+                                    inline-flex
+                                    items-center
+                                    px-4
+                                    py-2
+                                    rounded-r-md
+                                    border border-gray-300
+                                    bg-white
+                                    text-sm
+                                    font-medium
+                                    text-gray-700
+                                    hover:bg-gray-50
+                                    focus:z-10
+                                    focus:outline-none
+                                    focus:ring-1
+                                    focus:ring-indigo-500
+                                    focus:border-indigo-500
+                                "
+                            >
+                                Replace all occurrences
+                            </button>
+                        </span>
+                    </div>
 
-        <p id="content">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-            dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
-            sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-            kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-            dolor sit amet.
-        </p>
+                    <div
+                        class="
+                            prose
+                            text-gray-500
+                            mx-auto
+                            lg:max-w-none
+                            mt-12
+                            px-60
+                        "
+                    >
+                        <p
+                            class="antialiased text-justify break-words"
+                            id="content"
+                        >
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no
+                            sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no
+                            sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no
+                            sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no
+                            sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no
+                            sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no
+                            sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no
+                            sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no
+                            sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no
+                            sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no
+                            sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both; display: block; height: 0px"></div>
     </body>
 </html>
