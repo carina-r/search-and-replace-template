@@ -37,7 +37,7 @@
                 const start = textValue.indexOf(match, currentIndex)
                 const end = start + match.length
                 currentIndex = end
-                return `<span style="background-color: yellow; font-style: italic;">${textValue.substring(start, end)}</span>`;
+                return `<span style="background-color: yellow; font-style: italic;">${textValue.substring(start, end)}</span>`
             })
         })
     }
